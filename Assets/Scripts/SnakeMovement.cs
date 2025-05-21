@@ -89,8 +89,7 @@ public class SnakeMovement : MonoBehaviour
                     {
                         Destroy(bodyParts[i].gameObject);
                         Destroy(bodyParts[i]);
-                    }
-                    //Destroy(this.gameObject);
+                    }                    //Destroy(this.gameObject);
 
             }
            
@@ -161,7 +160,7 @@ public class SnakeMovement : MonoBehaviour
         StopCoroutine(UpdateStatusEveryXSeconds(x));
         if (isRunning)
         {
-            isRunning = true;
+            isRunning = false;
             speed = speedWalking;
         }
 
